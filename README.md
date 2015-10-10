@@ -25,6 +25,10 @@ please use the latest version of following tools:
 ### Build
 
     npm run build
+    
+or you can use hot mode if you don't want to `build` repeatedly:
+
+    npm run dev
 
 ### Start
 

@@ -5,7 +5,8 @@
   "main": "src/server/index.js",
   "scripts": {
     "start": "node src/server/index.js",
-    "build": "webpack --config config/webpack.config.js"
+    "build": "webpack --config config/webpack.config.js",
+    "dev": "webpack-dev-server --config config/webpack.config.js --devtool eval --progress --colors --hot --content-base dist"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,11 @@
     "koa-route": "^2.4.2",
     "koa-static": "^1.4.9",
     "react": "^0.14.0",
-    "swig": "^1.4.2",
-    "webpack": "^1.12.2"
+    "swig": "^1.4.2"
   },
   "devDependencies": {
-    "babel": "^5.8.23"
+    "babel": "^5.8.23",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
   }
 }
