@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactDOMServer from 'react-dom/server';
 
 import AppRoot from './components/AppRoot.jsx';
 
@@ -14,11 +16,11 @@ class App {
     });
 
     if (element) {
-      React.render(appRootElement, element);
+      ReactDOM.render(appRootElement, element);
       return;
     }
 
-    return React.renderToString(appRootElement);
+    return ReactDOMServer.renderToString(appRootElement);
   }
 
   renderToDOM(element) {

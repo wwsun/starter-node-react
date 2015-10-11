@@ -9,8 +9,8 @@ the following links is highly recommended.
 
 please use the latest version of following tools:
 
-1. ECMAScript 6 (ES6 or ES2015)
-1. React, v0.14
+1. ECMAScript 6
+1. React, [v0.14](http://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
 1. Webpack, v1.12
 1. Babel, v5.8
 1. Koa, v1.0
