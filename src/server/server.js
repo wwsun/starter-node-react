@@ -1,12 +1,12 @@
 'use strict';
 
-var path = require('path');
-var koa = require('koa');
-var logger = require('koa-logger');
-var serve = require('koa-static');
-var route = require('koa-route');
+import path from 'path';
+import koa from 'koa';
+import logger from 'koa-logger';
+import serve from 'koa-static';
+import route from 'koa-route';
 
-var render = require('./lib/render');
+import render from './lib/render';
 
 var app = koa();
 

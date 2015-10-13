@@ -107,7 +107,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _componentsAppRootJsx = __webpack_require__(159);
+	var _reactDom = __webpack_require__(159);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _reactDomServer = __webpack_require__(160);
+
+	var _reactDomServer2 = _interopRequireDefault(_reactDomServer);
+
+	var _componentsAppRootJsx = __webpack_require__(161);
 
 	var _componentsAppRootJsx2 = _interopRequireDefault(_componentsAppRootJsx);
 
@@ -126,11 +134,11 @@
 	      });
 
 	      if (element) {
-	        _react2['default'].render(appRootElement, element);
+	        _reactDom2['default'].render(appRootElement, element);
 	        return;
 	      }
 
-	      return _react2['default'].renderToString(appRootElement);
+	      return _reactDomServer2['default'].renderToString(appRootElement);
 	    }
 	  }, {
 	    key: 'renderToDOM',
@@ -19697,6 +19705,24 @@
 
 	'use strict';
 
+	module.exports = __webpack_require__(5);
+
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(149);
+
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
@@ -19715,11 +19741,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _UserProfileJsx = __webpack_require__(160);
+	var _UserProfileJsx = __webpack_require__(162);
 
 	var _UserProfileJsx2 = _interopRequireDefault(_UserProfileJsx);
 
-	var _configApp = __webpack_require__(161);
+	var _configApp = __webpack_require__(163);
 
 	var _configApp2 = _interopRequireDefault(_configApp);
 
@@ -19756,7 +19782,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 160 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19828,7 +19854,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 161 */
+/* 163 */
 /***/ function(module, exports) {
 
 	var config = {};
