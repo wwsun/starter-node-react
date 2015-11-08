@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server/index.js",
     "build": "webpack --config config/webpack.config.js",
-    "dev": "webpack-dev-server --config config/webpack.config.js --devtool eval --progress --colors --hot --content-base dist"
+    "dev": "webpack-dev-server --config config/webpack.config.js --devtool eval --progress --colors --hot --content-base dist/"
   },
   "repository": {
     "type": "git",

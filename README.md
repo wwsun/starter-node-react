@@ -12,7 +12,7 @@ please use the latest version of following tools:
 1. ECMAScript 6
 1. React [0.14](http://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
 1. Webpack 1.12
-1. Babel 6
+1. Babel [6.0](https://babeljs.io/blog/2015/10/29/6.0.0/)
 1. Koa 1.0
 1. Node.js 4.1
 
@@ -24,11 +24,18 @@ please use the latest version of following tools:
     
 ### Build
 
+If your app is ready, and you want to check the results, you can execute
+
     npm run build
-    
-or you can use hot mode if you don't want to `build` repeatedly:
+
+now the `bundle.js` is serving at `http://localhost:300/bundle.js` via your koa server, 
+or you can use hot mode if you don't want to `build` repeatedly to check the code changes:
 
     npm run dev
+    
+now the `bundle.js` is serving at `http://localhost:8080/assets/bundle.js` via `webpack-dev-server`
+
+**remember!!! you should modify the path of file `bundle.js` in `home.js` manually!**
 
 ### Start
 
@@ -42,3 +49,4 @@ Open your browser, and visit `http://localhost:3000` to check the result
 
 1. [Babel 6.0 released](https://babeljs.io/blog/2015/10/29/6.0.0/)
 1. [Babel-loader documentation](https://github.com/babel/babel-loader)
+1. [webpack dev server](http://webpack.github.io/docs/webpack-dev-server.html)
