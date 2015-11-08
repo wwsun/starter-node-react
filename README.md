@@ -10,11 +10,11 @@ the following links is highly recommended.
 please use the latest version of following tools:
 
 1. ECMAScript 6
-1. React, [v0.14](http://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
-1. Webpack, v1.12
-1. Babel, v5.8
-1. Koa, v1.0
-1. Node.js, v4.1
+1. React [0.14](http://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+1. Webpack 1.12
+1. Babel 6
+1. Koa 1.0
+1. Node.js 4.1
 
 ## Running
 
@@ -37,3 +37,8 @@ or you can use hot mode if you don't want to `build` repeatedly:
 ### Browse
 
 Open your browser, and visit `http://localhost:3000` to check the result
+
+## Reference documentations
+
+1. [Babel 6.0 released](https://babeljs.io/blog/2015/10/29/6.0.0/)
+1. [Babel-loader documentation](https://github.com/babel/babel-loader)
