@@ -28,14 +28,14 @@ If your app is ready, and you want to check the results, you can execute
 
     npm run build
 
-now the `bundle.js` is serving at `http://localhost:300/bundle.js` via your koa server, 
-or you can use hot mode if you don't want to `build` repeatedly to check the code changes:
+then the `bundle.js` is serving at `http://localhost:300/bundle.js` via your koa server, 
+or you can use hot mode if you want to `build` repeatedly to check the code changes:
 
     npm run dev
     
-now the `bundle.js` is serving at `http://localhost:8080/assets/bundle.js` via `webpack-dev-server`
+then the `bundle.js` is serving at `http://localhost:8080/assets/bundle.js` via `webpack-dev-server`
 
-**remember!!! you should modify the path of file `bundle.js` in `home.js` manually!**
+**remember!!! you should modify the path of file `bundle.js` in `home.html` manually!**
 
 ### Start
 
