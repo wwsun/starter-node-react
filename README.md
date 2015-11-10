@@ -11,6 +11,7 @@ please use the latest version of following tools:
 
 1. ECMAScript 6
 1. React [0.14](http://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+1. React-router [1.0](https://github.com/rackt/react-router)
 1. Webpack 1.12
 1. Babel [6.0](https://babeljs.io/blog/2015/10/29/6.0.0/)
 1. Koa 1.0
@@ -50,3 +51,4 @@ Open your browser, and visit `http://localhost:3000` to check the result
 1. [Babel 6.0 released](https://babeljs.io/blog/2015/10/29/6.0.0/)
 1. [Babel-loader documentation](https://github.com/babel/babel-loader)
 1. [webpack dev server](http://webpack.github.io/docs/webpack-dev-server.html)
+1. [React-router 1.0 doc](https://github.com/rackt/react-router)

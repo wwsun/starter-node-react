@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 
-import AppRoot from './components/AppRoot.jsx';
+//import AppRoot from './components/AppRoot.jsx';
+import AppRoutes from './appRoutes.jsx';
 
 class App {
 
@@ -11,7 +12,7 @@ class App {
   }
 
   render (element) {
-    var appRootElement = React.createElement(AppRoot, {
+    var appRootElement = React.createElement(AppRoutes, {
       state: this.state
     });
 
