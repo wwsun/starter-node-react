@@ -17,6 +17,30 @@ please use the latest version of following tools:
 1. Koa 1.0
 1. Node.js 4.1
 
+## Documentation
+
+### Server-side codes with ES6
+
+- `babel-node` is selected in the server-side, 
+which is an executable for running code via Babel that otherwise works like the `node` executable.
+
+- `babel-preset-es2015-node5` is selected, so that Babel can transpile ES6.
+The preset configures Babel so that only ES6 constructs are transpiled that missing from Node.js 5。
+
+### Client side codes with ES6 (React with ES6)
+
+Tools:
+
+- **webpack** as a client-side module build and module loader
+- **npm** as the package manager
+- **Babel** as a transpiler from ES6 to ES5
+
+Dependencies:
+
+- `babel-loader` enables webpack to transpile JavaScript via Babel.
+- `babel-preset-es2015` is a Babel preset for compiling ES6 to plain ES6.
+- `webpack-dev-server` adds a hot-reloading development web server to webpack.
+
 ## Running
 
 ### Install dependencies
@@ -49,6 +73,7 @@ Open your browser, and visit `http://localhost:3000` to check the result
 ## Reference documentations
 
 1. [Babel 6.0 released](https://babeljs.io/blog/2015/10/29/6.0.0/)
+1. [Setting up Babel 6](http://babeljs.io/blog/2015/10/31/setting-up-babel-6/)
 1. [Babel-loader documentation](https://github.com/babel/babel-loader)
 1. [webpack dev server](http://webpack.github.io/docs/webpack-dev-server.html)
 1. [React-router 1.0 doc](https://github.com/rackt/react-router)
