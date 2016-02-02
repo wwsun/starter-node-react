@@ -1,10 +1,13 @@
 var path = require('path');
 var node_modules = path.resolve(__dirname, '../node_modules');
 
+var dir_client = path.resolve(__dirname, '../src/client/scripts');
+var dir_dist = path.resolve(__dirname, '../dist');
+
 module.exports = {
-  entry: path.resolve(__dirname, '../src/client/scripts/client.js'),
+  entry: path.resolve(dir_client, 'client.js'),
   output: {
-    path: path.resolve(__dirname, '../dist'), // for standalone building
+    path: dir_dist, // for standalone building
     publicPath: '/assets/', // for hot building
     filename: 'bundle.js'
   },
