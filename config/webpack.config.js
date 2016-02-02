@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var node_modules = path.resolve(__dirname, '../node_modules');
 
 var dir_client = path.resolve(__dirname, '../src/client/scripts');
@@ -11,10 +12,18 @@ module.exports = {
     publicPath: '/assets/', // for hot building
     filename: 'bundle.js'
   },
-
   module: {
     loaders: [
       {test: /src(\\|\/).+\.jsx?$/, exclude: /node_modules/, loader: 'babel', query: {presets: ['es2015', 'react']}}
     ]
-  }
+  },
+  plugins: [
+    // Avoid publishing files when compilation fails
+    new webpack.NoErrorsPlugin()
+  ],
+  stats: {
+    colors: true // Nice colored output
+  },
+  // Create Sourcemaps for the bundle
+  devtool: 'source-map'
 };
