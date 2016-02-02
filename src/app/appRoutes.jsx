@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router, Route } from 'react-router';
-import createBrowserHistory from 'history/lib/createBrowserHistory';
+import { Router, Route, browserHistory } from 'react-router';
 
 import AppRoot from './components/AppRoot.jsx';
 import About from './components/About.jsx';
@@ -13,7 +12,7 @@ class AppRoutes extends React.Component {
     console.log(this.props.state);
 
     return (
-      <Router history={createBrowserHistory()}>
+      <Router history={browserHistory}>
         <Route path="/" component={AppRoot}>
           <Route path="about" component={About} />
           <Route path="*" component={NoMatch} />
